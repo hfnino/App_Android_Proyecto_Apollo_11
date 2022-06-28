@@ -30,7 +30,6 @@ class MainActivity : AppCompatActivity() {
 
         initUI() // si no hacemos click en el boton Ingresar, no hace nada y pasa a ejecutar la funcion //validarPreferenciasUsiario()
         validarPreferenciasUsuario()
-        print("Prueba de cambios git")
     }
 
     fun validarPreferenciasUsuario(){
