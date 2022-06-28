@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/datosPerfil"
+        android:title="Datos de Perfil"
+        android:icon="@drawable/ic_baseline_person_pin_24"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/imgsApolloFavoritas"
+        android:title="Consultar Imgs Favoritas"
+        android:icon="@drawable/ic_baseline_star_24"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/cerrarSesion"
+        android:title="Cerrar Sesión"
+        android:icon="@drawable/ic_baseline_power_settings_new_24"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/opcion4"
+        android:title="Opción 4"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/opcion5"
+        android:title="Opción 5"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/opcion6"
+        android:title="Opción 6"
+        app:showAsAction="never"/>
+
+</menu>

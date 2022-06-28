@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contenedorRecyclerViewImgsApolo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF5CF"
+    tools:context=".ui.view.RecyclerViewImgsApoloActivity">
+
+    <TextView
+        android:id="@+id/textViewNombreIngresado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="2dp"
+        android:text="Bienvenido - &quot;Nombre persona quien ingreso&quot;"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTituloImgs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTituloImgs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:text="Imagenes - Proyecto Apolo"
+        android:textColor="#853A3A"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/searchViewImgs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNombreIngresado" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchViewImgs"
+        android:layout_width="match_parent"
+        android:layout_height="32sp"
+        android:layout_marginTop="2dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="2dp"
+        android:gravity="bottom"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerViewImgsApolo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTituloImgs" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewImgsApolo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchViewImgs" />
+
+    <ProgressBar
+        android:id="@+id/progressCircular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

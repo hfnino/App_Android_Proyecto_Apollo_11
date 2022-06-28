@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="4dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contenedorItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E7E8E8">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.86" />
+
+        <ImageView
+            android:id="@+id/imageViewPhoto"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@color/black"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/textViewTituloImgs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textAlignment="center"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Titulo de la Imagen Apolo"
+            android:textColor="#853A3A"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewPhoto"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre_real"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewPhoto"
+            app:layout_constraintTop_toBottomOf="@id/textViewTituloImgs" />
+
+        <TextView
+            android:id="@+id/textViewFavorito"
+            android:layout_width="114dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/imagen_favorita"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageViewPhoto"
+            app:layout_constraintTop_toBottomOf="@id/textViewDescripcion" />
+
+        <ImageButton
+            android:id="@+id/imageButtonFavorito"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toStartOf="@id/checkboxFavorito"
+            app:layout_constraintHorizontal_bias="0.28"
+            app:layout_constraintStart_toStartOf="@id/textViewFavorito"
+            app:layout_constraintTop_toBottomOf="@id/textViewFavorito"
+            android:src="@android:drawable/btn_star" />
+
+        <CheckBox
+            android:id="@+id/checkboxFavorito"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/textViewFavorito"
+            app:layout_constraintEnd_toEndOf="@id/textViewFavorito"
+            app:layout_constraintStart_toEndOf="@id/imageButtonFavorito"
+            tools:layout_editor_absoluteY="91dp" />
+
+        <TextView
+            android:id="@+id/textViewIdImg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Id Img"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textAlignment="center"
+            android:ellipsize="end"
+            android:singleLine="true"
+            app:layout_constraintStart_toEndOf="@+id/imageViewPhoto"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
