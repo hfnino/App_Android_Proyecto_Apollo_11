@@ -1,4 +1,4 @@
-#App Android desarrollada en lenguaje Kotlin que tiene implementado =>
+# App Android desarrollada en lenguaje Kotlin que tiene implementado =>
 
 CheckBox => Si
 Clean Architecture => Si
