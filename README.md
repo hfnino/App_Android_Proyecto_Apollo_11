@@ -1,6 +1,7 @@
 ## App Android desarrollada en lenguaje Kotlin que tiene implementado =>
 
 CheckBox => Si
+
 Clean Architecture => Si
 Dagger Hilt para inyección de dependencias => Si
 DatePicker (Selector de fecha) => No
