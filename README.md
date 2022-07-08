@@ -1,8 +1,8 @@
 ## App Android desarrollada en lenguaje Kotlin que lista items de imagenes de Apollo 11 y permite guardar imagenes favoridas. 
 
->***Esta app tiene implementado =>***
+***Esta app tiene implementado =>***
 
-CheckBox => Si; 
+>CheckBox => Si; 
 Clean Architecture => Si; 
 Dagger Hilt para inyección de dependencias => Si; 
 DatePicker (Selector de fecha) => No; 
@@ -22,9 +22,9 @@ Shimmer (Pantalla personalizada de carga para no usar los proggess Bar) => No;
 Testing (Pruebas unitarias) => Si; 
 View Binding => Si; 
 
->***XML Componets y Material Dising Componets =>***
+***XML Componets y Material Dising Componets =>***
 
-AppCompactButton Selector y shapes => No; 
+>AppCompactButton Selector y shapes => No; 
 Button con Selector y shapes => No; 
 CardView => Si; 
 GuideLine => Si; 
