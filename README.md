@@ -1,4 +1,4 @@
-## App Android desarrollada en lenguaje Kotlin que tiene implementado =>
+## App Android desarrollada en lenguaje Kotlin que lista items de imagenes de Apollo 11 y permite guardar imagenes favoridas. Esta app tiene implementado =>
 
 CheckBox => Si; 
 Clean Architecture => Si; 
