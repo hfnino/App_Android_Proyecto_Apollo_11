@@ -18,8 +18,8 @@ SearchView => Si;
 Share Preferences => Si; 
 Splash Screen (Pantalla de bienvenida y recarga) => No; 
 Switch => Si; 
-Shimmer (Pantalla personalizada de carga para no usar los proggess Bar) => No; 
-Testing (Pruebas unitarias) => Si; 
+Shimmer (Pantalla personalizada de carga para no usar los proggess Bar) => No;
+Testing (Pruebas unitarias con junit, mockk y pruebas de UI con Espresso) => Si; 
 View Binding => Si; 
 
 ***XML Componets y Material Dising Componets =>***
